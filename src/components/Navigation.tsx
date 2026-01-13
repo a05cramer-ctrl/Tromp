@@ -10,7 +10,7 @@ const Navigation = ({ visible }: NavigationProps) => {
       <div className="nav-content">
         <a href="#about" className="nav-link">about</a>
         <a href="#chart" className="nav-link">chart</a>
-        <a href="#community" className="nav-link">community</a>
+        <a href="https://x.com/Tromp_dev" target="_blank" rel="noopener noreferrer" className="nav-link">community</a>
       </div>
     </nav>
   )

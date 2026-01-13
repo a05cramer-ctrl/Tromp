@@ -16,7 +16,7 @@ const SocialButtons = () => {
         Dexscreener
       </a>
       <a
-        href="https://twitter.com"
+        href="https://x.com/Tromp_dev"
         target="_blank"
         rel="noopener noreferrer"
         className="social-button"
