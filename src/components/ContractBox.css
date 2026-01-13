@@ -1,0 +1,59 @@
+.contract-box {
+  background: rgba(26, 15, 10, 0.9);
+  border: 3px solid #ff6a00;
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  max-width: 600px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 0 20px rgba(255, 106, 0, 0.2),
+    inset 0 0 20px rgba(255, 106, 0, 0.05),
+    0 0 0 2px rgba(26, 15, 10, 0.5);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+}
+
+.contract-box:hover {
+  border-color: #ff8c42;
+  border-width: 3px;
+  box-shadow: 
+    0 0 30px rgba(255, 106, 0, 0.4),
+    inset 0 0 20px rgba(255, 106, 0, 0.1),
+    0 0 0 2px rgba(26, 15, 10, 0.5);
+  transform: translateY(-2px);
+}
+
+.contract-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.contract-address {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  color: #ff6a00;
+  word-break: break-all;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contract-hint {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .contract-box {
+    padding: 1rem 1.5rem;
+  }
+  
+  .contract-address {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,117 @@
+.lore-section {
+  padding: 6rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.lore-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: #ff6a00;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-transform: lowercase;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  animation: fadeIn 1s ease-out 0.5s forwards;
+  -webkit-text-stroke: 3px #1a0f0a;
+  text-stroke: 3px #1a0f0a;
+  text-shadow: 
+    0 0 20px rgba(255, 106, 0, 0.5),
+    0 0 40px rgba(255, 106, 0, 0.3),
+    3px 3px 0px #1a0f0a,
+    6px 6px 0px #000;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.lore-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(26, 15, 10, 0.95);
+  border: 2px solid #ff6a00;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  box-shadow: 
+    0 0 40px rgba(255, 106, 0, 0.3),
+    inset 0 0 30px rgba(255, 106, 0, 0.05);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+  animation: floatCard 6s ease-in-out infinite;
+}
+
+.lore-card-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.lore-text {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: center;
+  text-transform: lowercase;
+  font-family: 'Georgia', serif;
+}
+
+.lore-text p {
+  margin: 0.5rem 0;
+}
+
+.lore-symbol {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-style: italic;
+  color: #ff6a00;
+  font-weight: 700;
+  animation: pulseSlow 3s ease-in-out infinite;
+  text-transform: lowercase;
+}
+
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .lore-section {
+    padding: 4rem 1rem;
+  }
+  
+  .lore-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .lore-text {
+    font-size: 1rem;
+  }
+  
+  .lore-symbol {
+    font-size: 1.5rem;
+  }
+}
