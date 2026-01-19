@@ -5,7 +5,7 @@ interface ContractBoxProps {
 }
 
 const ContractBox = ({ onCopy }: ContractBoxProps) => {
-  const contractAddress = '3ZJuaD5XSJ4VzgH1PYo2Dud2TpjncwKwQMPrVWCubonk'
+  const contractAddress = 'HYD8ERifkaGiHynCJHjbK4HGyHMgPxRRDwqbPr3Abonk'
 
   const handleCopy = async () => {
     try {
